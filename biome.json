@@ -3,10 +3,10 @@
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
-		"useIgnoreFile": true
+		"useIgnoreFile": false
 	},
 	"files": {
-		"includes": ["src/**/*.ts", "src/**/*.svelte", "*.ts"]
+		"includes": ["**", "!node_modules", "!dist", "**/*.ts", "**/*.svelte", "**/*.json"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -22,8 +22,25 @@
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "single",
-			"semicolons": "asNeeded",
-			"trailingCommas": "none"
+			"semicolons": "always",
+			"trailingCommas": "all"
 		}
-	}
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.svelte"],
+			"linter": {
+				"rules": {
+					"style": {
+						"useConst": "off",
+						"useImportType": "off"
+					},
+					"correctness": {
+						"noUnusedVariables": "off",
+						"noUnusedImports": "off"
+					}
+				}
+			}
+		}
+	]
 }

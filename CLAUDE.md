@@ -29,7 +29,7 @@ pnpm format                 # Format code with Biome
 
 ### Environment
 ```bash
-mise install                # Install Node 22 (defined in mise.toml)
+mise install                # Install node and pnpm (defined in mise.toml)
 ```
 
 ## Architecture
