@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- single shared circle -->
+  <circle cx="32" cy="32" r="28" fill="#F39A1F" stroke="#000" stroke-width="2"/>
+
+  <!-- Curvy Star of David lines (also act as basketball/pizza seams) -->
+  <g transform="translate(32 32)" fill="none" stroke="#000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Upright triangle (all 3 edges curved) -->
+    <path d="M 0 -26 Q 6.2 -3.6 22.516 13"/>
+    <path d="M 22.516 13 Q 0 7 -22.516 13"/>
+    <path d="M -22.516 13 Q -6.2 -3.6 0 -26"/>
+
+    <!-- Inverted triangle (all 3 edges curved) -->
+    <path d="M 0 26 Q 6.2 3.6 22.516 -13"/>
+    <path d="M 22.516 -13 Q 0 -7 -22.516 -13"/>
+    <path d="M -22.516 -13 Q -6.2 3.6 0 26"/>
+  </g>
+
+  <!-- red dots centered within the 6 star "slices" (placed inside each point triangle) -->
+  <g transform="translate(32 32)" fill="#C91E1E" opacity="0.9">
+    <circle cx="0" cy="-14" r="2.1"/>
+    <circle cx="12" cy="-7" r="2.1"/>
+    <circle cx="12" cy="7" r="2.1"/>
+    <circle cx="0" cy="14" r="2.1"/>
+    <circle cx="-12" cy="7" r="2.1"/>
+    <circle cx="-12" cy="-7" r="2.1"/>
+  </g>
+
+  <!-- Dragon Ball star -->
+  <g transform="translate(32 32)">
+    <polygon points="0,-6.5 1.6,-2.1 6.2,-2.1 2.3,0.7 3.7,5.2 0,2.7 -3.7,5.2 -2.3,0.7 -6.2,-2.1 -1.6,-2.1"
+             fill="#D01818"/>
+  </g>
+</svg>
