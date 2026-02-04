@@ -2,17 +2,18 @@
   // Simple component, no logic
 </script>
 
-<main>
-  <div class="hi">Hi.</div>
-  <p>
-    <a href="https://stackoverflow.com/a/1732454/814589">This</a> is my favorite
-    Stack Overflow response of all time.
-  </p>
+<main class="container">
+  <div class="content">
+    <h1>Hi.</h1>
+    <p>
+      <a href="https://stackoverflow.com/a/1732454/814589">This</a> is my favorite
+      Stack Overflow response of all time.
+    </p>
+  </div>
 </main>
 
 <style>
-  .hi {
-    font-size: 5em;
+  .content {
     text-align: center;
     margin-top: 40vh;
   }
