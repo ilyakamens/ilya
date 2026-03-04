@@ -1,6 +1,6 @@
 # ilya
 
-Svelte 5 + TypeScript + Vite application with Biome for linting and formatting.
+Svelte 5 + TypeScript + Vite application with OXC for linting and formatting.
 
 ## Environment Setup
 
