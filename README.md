@@ -10,10 +10,9 @@ This project uses [mise](https://mise.jdx.dev/) for Node version management.
 # Install mise (if not already installed)
 curl https://mise.run | sh
 
-# Install Node 22
+# Install Node and pnpm
+mist trust
 mise install
-
-# The project will automatically use Node 22 when in this directory
 ```
 
 ## Recommended IDE Setup
