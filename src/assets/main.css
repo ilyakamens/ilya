@@ -1,1 +1,8 @@
 @import '@picocss/pico/css/pico.min.css';
+
+:where(a, button, [role=button]):is(:active, :focus) {
+  --pico-color: var(--pico-primary) !important;
+  --pico-text-decoration: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}

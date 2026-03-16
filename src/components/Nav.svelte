@@ -14,11 +14,6 @@
     padding-block: 0.5rem;
   }
 
-  a:focus,
-  a:active {
-    --pico-color: var(--pico-primary);
-  }
-
   a.active {
     text-decoration: underline;
   }
