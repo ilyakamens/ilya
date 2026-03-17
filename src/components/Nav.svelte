@@ -12,6 +12,7 @@
 <style>
   nav {
     padding-block: 0.5rem;
+    padding-left: 2rem;
   }
 
   a.active {
