@@ -1,5 +1,11 @@
 @import '@picocss/pico/css/pico.min.css';
 
+html,
+body,
+#app {
+  min-height: 100dvh;
+}
+
 :where(a, button, [role=button]):is(:hover, :active, :focus) {
   --pico-color: var(--pico-primary) !important;
   --pico-text-decoration: none !important;
