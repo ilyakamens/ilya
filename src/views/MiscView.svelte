@@ -1,3 +1,5 @@
+<script lang="ts"></script>
+
 <main class="mx-auto max-w-2xl px-6 py-16 sm:py-24">
   <div class="space-y-10">
     <section>
