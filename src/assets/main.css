@@ -1,21 +1,9 @@
-@import '@picocss/pico/css/pico.min.css';
+@import 'tailwindcss';
 
-html {
-  min-height: 100dvh;
-  /* Chrome renders the color-scheme:dark canvas background as a slightly
-     different shade than the root element's background-color (Pico uses
-     fractional RGB values: rgb(19, 22.5, 30.5)). This causes a visible
-     color band where the two painting regions meet. Promoting the root
-     to its own compositing layer forces Chrome to paint the background
-     as a single GPU texture, eliminating the seam. */
-  transform: translateZ(0);
-}
-
-
-:where(a, button, [role=button]):is(:hover, :active, :focus) {
-  --pico-color: var(--pico-primary) !important;
-  --pico-text-decoration: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  -webkit-tap-highlight-color: transparent;
+@layer base {
+  html {
+    min-height: 100dvh;
+    color-scheme: light dark;
+    touch-action: manipulation;
+  }
 }

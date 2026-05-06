@@ -12,32 +12,13 @@
   });
 </script>
 
-<main class="container">
-  <div class="content">
-    {#each datiImages as src, i}
-      <img {src} alt="Dati {i + 1}" class:visible={i === index} />
-    {/each}
-  </div>
+<main class="relative mx-auto flex min-h-[80vh] max-w-5xl items-start justify-center px-6 pt-8">
+  {#each datiImages as src, i}
+    <img
+      {src}
+      alt="Dati {i + 1}"
+      class="absolute max-h-[80vh] max-w-full object-contain"
+      class:invisible={i !== index}
+    />
+  {/each}
 </main>
-
-<style>
-  .content {
-    position: relative;
-    padding-top: 2rem;
-    display: flex;
-    justify-content: center;
-    min-height: 80vh;
-  }
-
-  img {
-    position: absolute;
-    max-height: 80vh;
-    max-width: 100%;
-    object-fit: contain;
-    visibility: hidden;
-  }
-
-  img.visible {
-    visibility: visible;
-  }
-</style>
